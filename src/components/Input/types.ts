@@ -3,4 +3,5 @@ export type InputProps = {
   name: string;
   type: string;
   label: string;
+  onChange: (value: string) => void;
 };
