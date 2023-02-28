@@ -13,7 +13,9 @@ const WrapperModifier = {
   secondary: (theme: DefaultTheme) => css`
     border-color: ${theme.colors.black};
     background: ${theme.colors.white};
-    padding: 2px;
+    width: 2px;
+    height: 4px;
+    padding: 4px;
     border-radius: 50%;
   `,
 };
