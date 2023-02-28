@@ -1,11 +1,15 @@
+import { BrowserRouter } from "react-router-dom";
 import { ThemeProvider } from "styled-components";
+import { Routes } from "./routes";
 import { GlobalStyle } from "./styles/global";
 import { themeWhite } from "./styles/theme";
 
 function App() {
   return (
     <ThemeProvider theme={themeWhite}>
-      <h1>Mini Dogs</h1>
+      <BrowserRouter>
+        <Routes />
+      </BrowserRouter>
       <GlobalStyle />
     </ThemeProvider>
   );
