@@ -23,8 +23,10 @@ const WrapperModifier = {
 export const Wrapper = styled.button<WrapperProps>`
   ${({ $styleType, theme }) => css`
     color: ${theme.colors.white};
+    font-size: ${theme.font.sizes.sm};
     padding: 8px 32px;
     border-radius: 4px;
+    cursor: pointer;
 
     ${$styleType && WrapperModifier[$styleType](theme)};
   `};

@@ -1,6 +1,10 @@
 import { ButtonProps } from "./types";
 import * as S from "./styles";
 
-export const Button = ({ children, styleType }: ButtonProps) => {
-  return <S.Wrapper $styleType={styleType}>{children}</S.Wrapper>;
+export const Button = ({ children, styleType, ...props }: ButtonProps) => {
+  return (
+    <S.Wrapper $styleType={styleType} {...props}>
+      {children}
+    </S.Wrapper>
+  );
 };
