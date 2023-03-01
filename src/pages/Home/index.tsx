@@ -1,3 +1,12 @@
+import { Container } from "../../components/Container";
+import { Header } from "../../components/Header";
+import { PhotosContent } from "../../components/PhotosContent";
+
 export const Home = () => {
-  return <div>Home</div>;
+  return (
+    <Container>
+      <Header />
+      <PhotosContent />
+    </Container>
+  );
 };

@@ -2,6 +2,9 @@ const colors = {
   black: "#000000",
   white: "#FFFFFF",
   red: "#FF0000",
+  gray100: "#F9F9F9",
+  gray200: "#BFBFCC",
+  gray300: "#787880",
 };
 
 const font = {

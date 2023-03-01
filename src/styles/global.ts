@@ -15,5 +15,9 @@ export const GlobalStyle = createGlobalStyle`
     h1 {
       font-size: ${theme.font.sizes.lg};
     }
+
+    li {
+      list-style: none;
+    }
   `}
 `;
