@@ -9,17 +9,17 @@ const slice = createSlice({
   initialState,
   reducers: {
     fetchTokenStarted(state) {
-      state.token.loading = true;
+      state.loading = true;
     },
     fetchTokenSuccess(state, action) {
-      state.token.loading = false;
-      state.token.data = action.payload;
-      state.token.error = null;
+      state.loading = false;
+      state.data = action.payload;
+      state.error = null;
     },
     fetchTokenError(state, action) {
-      state.token.loading = false;
-      state.token.data = null;
-      state.token.error = action.payload;
+      state.loading = false;
+      state.data = null;
+      state.error = action.payload;
     },
   },
 });
@@ -48,6 +48,6 @@ export const fetchToken =
     }
   };
 
-export const loginTokenSelector = (state: RootState) => state.login.token.data;
+export const loginTokenSelector = (state: RootState) => state.login.data;
 
 export default slice.reducer;

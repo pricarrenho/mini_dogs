@@ -9,3 +9,9 @@ export type FetchTokenResult = {
   user_email: string;
   user_nicename: string;
 };
+
+export type LoginState = {
+  loading: boolean;
+  data: string | null;
+  error: string | null;
+};
